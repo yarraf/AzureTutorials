@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Azure.cosmodb
 {
-    internal class Item
-    {
-    }
+    public record Item(
+             string Id,
+             string CategoryId,
+             string Type
+     );
 }
