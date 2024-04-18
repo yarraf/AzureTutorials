@@ -4,11 +4,12 @@ using Microsoft.Azure.Cosmos.Fluent;
 using Microsoft.Azure.Cosmos.Linq;
 using Microsoft.Azure.Cosmos.Serialization.HybridRow.Schemas;
 using Microsoft.Azure.Documents;
+using System.Configuration;
 using System.Drawing.Text;
 
 const string connectionString = "";
-private const string endPointUri = "";
-private const string primaryKey = "";
+private const string endPointUri = ConfigurationManager.AppSettings["EndpointUri"];
+private const string primaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
 
 Console.WriteLine($"[Connection string]:\t{connectionString}");
 
