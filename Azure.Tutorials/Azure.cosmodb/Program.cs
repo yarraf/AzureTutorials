@@ -14,8 +14,8 @@ namespace Azure.cosmodb
     {
 
         const string connectionString = "";
-        private static  readonly string endPointUri = ConfigurationManager.AppSettings["EndpointUri"];
-        private static readonly string primaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
+        private static  readonly string EndPointUri = ConfigurationManager.AppSettings["EndpointUri"];
+        private static readonly string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
         private CosmosClient cosmosClient;
         private Database database;
         private Container container;
